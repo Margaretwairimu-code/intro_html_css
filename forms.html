@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        body {
+            background-color: #f5f4f4;
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+        }
+
+        form {
+            width: 60%;
+            border: 1px solid black;
+            margin: auto;
+
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: red;
+        }
+
+        input.full-width {
+            width: 100%;
+            padding: 12px;
+            box-sizing: border-box;
+            margin-bottom: 12px;
+            border: 1px solid #ccc;
+
+        }
+
+        button {
+            background-color: #262926;
+            color: white;
+            padding: 16px;
+            margin: auto;
+            border-radius: 10px;
+            cursor: pointer;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Form inputs text , email, password, phone, date, radio button, checkbox, select -->
+
+    <form action="">
+        <label for="full_name">full Name</label>
+        <input type="text" name="full_name" id="full_name" placeholder="Enter your full name" class="full-width">
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Email" required class="full-width">
+
+        <label for="dod">Date of Birth</label>
+        <input type="date" name="dob" id="dob" required min="2008-12-31" class="full-width">
+
+        <br>
+
+        <label for="gender">Select your Gender</label>
+        <input type="radio" name="gender" id="male" value="m">
+        <label for="male">Male</label>
+
+
+
+        <input type="radio" name="gender" id="female" value="f">
+        <label for="female">Female</label>
+
+
+        <label for="telephone">Telephone number</label>
+        <input type="tel" name="telephone" id="telephone" placeholder="Enter your telephone number" class="full-width">
+
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="Enter your password" class="full-width">
+
+        <label for="country">Country</label>
+        <input type="text" name="country" id="country" placeholder="Enter your country" class="full-width">
+
+        <label for="Password">Password</label>
+        <input type="password" name="password" id="password" placeholder="Enter your password">
+
+        <br>
+
+        <label for="hobbies">Select your Hobbies</label>
+        <input type="checkbox" name="hobbies" id="reading" value="reading">
+        <label for="reading">Reading</label>
+
+
+
+        <input type="checkbox" name="hobbies" id="traveling" value="traveling">
+        <label for="traveling">Traveling</label>
+
+
+
+        <input type="checkbox" name="hobbies" id="sports" value="sports">
+        <label for="sports">Sports</label>
+
+
+
+        <label for="submit">Submit</label>
+        <input type="submit" name="submit" id="submit" value="Submit">
+
+
+
+    </form>
+</body>
+
+</html>
