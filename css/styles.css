@@ -23,7 +23,7 @@ p {
 
 /* medium devices - tablets */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    .row{
+    .row {
         flex-wrap: wrap;
     }
 
@@ -39,10 +39,10 @@ p {
 }
 
 @media screen and (max-width: 767px) {
-    .row{
+    .row {
         flex-wrap: wrap;
     }
-    
+
     .col {
         width: 100%;
 
@@ -52,3 +52,5 @@ p {
         color: blue;
     }
 }
+
+/* xs, sm, md,lg, xl, xxl */
